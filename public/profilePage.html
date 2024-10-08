@@ -34,7 +34,7 @@
                         href="./profilePage.html">Profile</a>
                     </li>
                     <li>
-                        <a id="basket" class="hidden p-3 px-4 text-white bg-green-800 rounded-3xl hover:bg-green-600" href="./basket.html">Basket</a>
+                        <a id="basket" class="hidden p-3 px-4 text-white bg-green-800 rounded-3xl hover:bg-green-600" href="./basket.php">Basket</a>
                     </li>    
                     <li>
                         <a id="signin" class="p-3 px-4 text-white bg-green-800 rounded-3xl hover:bg-green-600" href="./signInPage.php">Sign In</a>
@@ -45,13 +45,13 @@
 
         <!-- Profile Section -->
         <section class="mt-14 mx-10 mb-10 flex-grow">
-            <h1 class="text-5xl mb-10">Your Profile</h1>
+            <h1 class="text-5xl ml-14 mb-10">Your Profile</h1>
             <div class="flex flex-col md:flex-row gap-4 justify-center">
                 <div>
                     <img src="./assets/profile.png" alt="Profile Picture" class="w-48 h-48">
                     <div class="flex justify-center">
                         <form method="POST" action="../constant/functions.php"> <!-- Assuming functions.php is the correct handler -->
-                            <button type="submit" name="logout" class="bg-red-600 text-white py-2 px-4 rounded">Logout</button>
+                            <button type="submit" name="logout" class="bg-green-600 hover:bg-green-500 text-white mt-5 py-2 px-4 rounded">Logout</button>
                         </form>
                     </div>
                 </div>

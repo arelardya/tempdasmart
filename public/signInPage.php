@@ -55,11 +55,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body class="font-[Poppins]">
     <div class="min-h-screen" style="background-image: url(./assets/bg_signIn.jpg);">
-        <nav class="flex flex-wrap justify-between items-center p-5 bg-white bg-opacity-80 shadow-md sticky top-0 z-10">
+    <nav class="flex justify-between items-center bg-green-800 bg-opacity-70">
             <div>
                 <a href="./index.html">
-                    <img class="w-16 h-16 md:w-20 md:h-20" src="./assets/logo.png" alt="">
+                    <img class="w-20 h-20" src="./assets/logo.png" alt="">
                 </a>
+            </div>
+            <div>
+                <ul class="flex items-center pr-5">
+                    <li>
+                        <a class="px-5 pb-3 text-white hover:underline" href="./market.php">Marketplace</a>
+                    </li>
+                    <li>
+                        <a class="px-5 pb-3 text-white hover:underline" href="./aboutus.html">About Us</a>
+                    </li>
+                    <li>
+                        <a class="p-3 px-4 text-green-800 bg-white rounded-3xl hover:bg-green-600" href="./adminlogin.html">Admin</a>
+                    </li>
+                </ul>
             </div>
         </nav>
         <div class="flex justify-center items-center mt-3">
@@ -75,13 +88,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <label for="password" class="block font-bold mb-2 text-white">Password</label>
                         <input type="password" id="password" name="password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Password" required>
                     </div>
-                    <div>
-                        <a href="signUpPage.php">New Here?</a>
-                        <a href="adminlogin.html">Admin</a>
+                    <div class="flex flex-row">
+                        <p class="mr-1">New Here?</p>
+                        <a href="signUpPage.php" class="text-green-800">Register Now</a>
                     </div>
                     <p class="text-red-500 text-center mt-4"><?php echo $message; ?></p> <!-- Message display -->
                     <button type="submit" class="h-10 mt-5 float-right cursor-pointer">
-                        <img src="./assets/nextButton.png" id="nextButton" onmouseover="changeImage(1)" onmouseout="changeImage(2)">
+                        <img src="./assets/nextButton.png" id="nextButton" onmouseover="changeImage(1)" onmouseout="changeImage(2)" class="h-10">
                     </button>
                 </form>
             </div>

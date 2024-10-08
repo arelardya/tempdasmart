@@ -138,38 +138,35 @@ $conn->close();
     <?php endif; ?>
 
     <div class="items-list">
-        <?php if (!empty($items)): ?>
-            <ul>
-                <?php foreach ($items as $item): ?>
-                <li class="item w-96 p-5">
-                    <div class="border rounded-lg p-5 item-details">
-                        <h2 class="mt-2 text-2xl font-bold text-gray-700"><?php echo htmlspecialchars($item['name']); ?></h2>
-                        <p>Price: <?php echo htmlspecialchars($item['price']); ?></p>
-                        <p>Category: <?php echo htmlspecialchars($item['category']); ?></p>
+    <?php if (!empty($items)): ?>
+        <ul class="flex flex-wrap gap-6">
+            <?php foreach ($items as $item): ?>
+            <li class="item w-96 p-5">
+                <div class="border rounded-lg p-5 item-details bg-gray-200 bg-opacity-30">
+                    <h2 class="mt-2 text-2xl font-bold text-gray-700"><?php echo htmlspecialchars($item['name']); ?></h2>
+                    <p>Price: <?php echo htmlspecialchars($item['price']); ?></p>
+                    <p>Category: <?php echo htmlspecialchars($item['category']); ?></p>
 
-                        <!-- Add to Cart form -->
-                        <form method="POST" action="market.php">
-                            <input type="hidden" name="item_id" value="<?php echo $item['id']; ?>">
-                            <button type="submit" class="add-to-cart mt-4 p-2 bg-green-600 text-white rounded-lg">Add to Cart</button>
-                        </form>
-                    </div>
-                </li>
-                <?php endforeach; ?>
-            </ul>
-        <?php else: ?>
-            <p>No items found.</p>
-        <?php endif; ?>
-    </div>
+                    <!-- Add to Cart form -->
+                    <form method="POST" action="market.php">
+                        <input type="hidden" name="item_id" value="<?php echo $item['id']; ?>">
+                        <button type="submit" class="add-to-cart mt-4 p-2 bg-green-800 text-white rounded-lg">Add to Cart</button>
+                    </form>
+                </div>
+            </li>
+            <?php endforeach; ?>
+        </ul>
+    <?php else: ?>
+        <p>No items found.</p>
+    <?php endif; ?>
+</div>
+
 
     <!-- Footer -->
-    <footer class="bg-green-800 p-10 grid grid-cols-1 z-20 relative md:grid-cols-3 text-white gap-5">
+    <footer class="bg-green-800 p-10 grid grid-cols-1 md:grid-cols-3 text-white gap-5 mt-5">
         <div>
-            <p>
-                Dasmart & co.
-            </p>
-            <p>
-                Committed to bringing you the best of goods.<br>&copy; 2020, dasmart&co. All Rights Reserved
-            </p>
+            <p>Dasmart & co.</p>
+            <p>Committed to bringing you the best of goods.<br>&copy; 2020, dasmart&co. All Rights Reserved</p>
         </div>
         <div class="flex justify-center">
             <img class="w-[20%]" src="./assets/logo.png" alt="">

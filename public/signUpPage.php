@@ -35,7 +35,7 @@
             <div>
                 <ul class="flex items-center pr-5">
                     <li>
-                        <a class="px-5 pb-3 text-white hover:underline" href="./market.html">Marketplace</a>
+                        <a class="px-5 pb-3 text-white hover:underline" href="./market.php">Marketplace</a>
                     </li>
                     <li>
                         <a class="px-5 pb-3 text-white hover:underline" href="./aboutus.html">About Us</a>
@@ -49,7 +49,7 @@
 
         <div class="flex justify-center items-center mt-20">
             <div class="bg-gray-300 bg-opacity-50 rounded-lg shadow-md p-10 w-9/12">
-                <h2 class="text-2xl font-bold mb-4 text-center text-white">Sign In</h2>
+                <h2 class="text-2xl font-bold mb-4 text-center text-white">Sign Up</h2>
                 <?php if ($registrationSuccess): ?>
                     <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mt-4" role="alert">
                         <strong class="font-bold">Success!</strong>

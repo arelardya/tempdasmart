@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['logout'])) {
             <ul class="flex items-center pr-5">
                 <li>
                     <a class="px-5 pb-3 text-black relative after:block after:bg-green-800 after:content-[''] after:h-[3px] after:w-0 after:transition-all after:duration-300 after:ease-in-out after:absolute after:left-0 after:bottom-0 hover:after:w-full" 
-                    href="./market.html">Marketplace</a>
+                    href="./market.php">Marketplace</a>
                 </li>
                 <li>
                     <a class="px-5 pb-3 text-black relative after:block after:bg-green-800 after:content-[''] after:h-[3px] after:w-0 after:transition-all after:duration-300 after:ease-in-out after:absolute after:left-0 after:bottom-0 hover:after:w-full" 
@@ -61,11 +61,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['logout'])) {
         <ul class="bg-gray-200 p-4 border border-black">Coming Soon</ul>
     </div>
 
-    <footer class="bg-green-800 p-10 grid grid-cols-3 text-white">
+    <footer class="bg-green-800 p-10 grid grid-cols-1 md:grid-cols-3 text-white">
         <div>
             <p>Dasmart & co.</p>
             <p>
-                Committed to bringing you the best of goods.<br>&copy; 2020, dasmart&co. All Rights Reserved
+                Committed to bringing you the best of goods.<br>&copy; 2020, dasmart&co. All Rights Reserved.
             </p>
         </div>
         <div class="flex justify-center">
@@ -78,6 +78,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['logout'])) {
                 Berharap Bersama St. Tultington
             </p>
         </div>
+    </footer>
     </footer>
 </body>
 </html>
