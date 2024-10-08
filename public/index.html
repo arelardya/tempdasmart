@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="./script.js"></script>
+</head>
+<body class="font-[Poppins]">
+    <nav class="flex flex-wrap justify-between items-center p-5 bg-white shadow-md sticky top-0 z-10">
+        <div>
+            <a href="./index.html">
+                <img class="w-16 h-16 md:w-20 md:h-20" src="./assets/logoijo.png" alt="">
+            </a>
+        </div>
+        <button id="burgerMenuButton" class="block md:hidden p-3">
+            <i class="fas fa-bars text-2xl"></i>
+        </button>
+        <div id="navLinks" class="w-full md:w-auto hidden md:flex flex-col md:flex-row items-center pr-5">
+            <ul class="flex flex-col md:flex-row items-center">
+                <li class="py-2 md:py-0">
+                    <a class="px-3 md:px-5 pb-2 text-black relative after:block after:bg-green-800 after:content-[''] after:h-[3px] after:w-0 after:transition-all after:duration-300 after:ease-in-out after:absolute after:left-0 after:bottom-0 hover:after:w-full" 
+                    href="./market.php">Marketplace</a>
+                </li>
+                <li class="py-2 md:py-0">
+                    <a class="px-3 md:px-5 pb-2 text-black relative after:block after:bg-green-800 after:content-[''] after:h-[3px] after:w-0 after:transition-all after:duration-300 after:ease-in-out after:absolute after:left-0 after:bottom-0 hover:after:w-full" 
+                    href="./aboutus.html">About Us</a>
+                </li>
+                <li class="py-2 md:py-0">
+                    <a id="profile" class="px-3 md:px-5 pb-2 text-black relative after:block after:bg-green-800 after:content-[''] after:h-[3px] after:w-0 after:transition-all after:duration-300 after:ease-in-out after:absolute after:left-0 after:bottom-0 hover:after:w-full" 
+                    href="./profilePage.html">Profile</a>
+                </li>
+                <li>
+                    <a id="basket" class="hidden p-3 px-4 text-white bg-green-800 rounded-3xl hover:bg-green-600" href="./basket.html">Basket</a>
+                </li>    
+                <li>
+                    <a id="signin" class="p-3 px-4 text-white bg-green-800 rounded-3xl hover:bg-green-600" href="./signInPage.php">Sign In</a>
+                </li>   
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Section 1 -->
+    <div class="flex flex-wrap justify-between items-center pt-10 sticky top-0 z-10 bg-white mb-16">
+        <div class="p-5 w-full md:w-[50%] text-center md:text-left">
+            <h1 class="text-6xl md:text-9xl font-logo">Dasmart</h1>
+            <p class="text-lg md:text-xl">
+                Bringing your daily supplies right to your front door. Don’t be a meme, be ‘da-Smart’.
+            </p>
+        </div>
+        <div class="w-full md:w-[50%] flex justify-center md:justify-end mt-10 md:mt-0">
+            <img class="mx-10 w-[80%] md:w-[60%]" src="./assets/bg.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="pt-10 z-20 relative bg-green-800 h-auto pb-20">
+        <div class="flex justify-center w-full h-[85%] mb-10">
+            <img class="object-cover w-[90%] h-[85%]" src="./assets/apple.jpg" alt="">
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-20 px-5 md:px-16 ">
+            <a class="flex justify-center" href="market.html">
+                <button class="bg-white rounded-3xl hover:scale-105 hover:shadow-2xl transition-transform duration-300 ease-in-out">
+                    <div class="flex justify-center">
+                        <img class="w-[50%]" src="./assets/cabbage.png" alt="">
+                    </div> 
+                    <div class="flex justify-center pb-5">
+                        <h1>Cabbage</h1>
+                    </div>
+                </button>
+            </a>
+            <a  class="flex justify-center" href="market.html">
+                <button class="bg-white rounded-3xl hover:scale-105 hover:shadow-2xl transition-transform duration-300 ease-in-out">
+                    <div class="flex justify-center">
+                        <img class="w-[50%]" src="./assets/cabbage.png" alt="">
+                    </div> 
+                    <div class="flex justify-center pb-5">
+                        <h1>Cabbage</h1>
+                    </div>
+                </button>
+            </a>
+            <a class="flex justify-center" href="market.html">
+                <button class="bg-white rounded-3xl hover:scale-105 hover:shadow-2xl transition-transform duration-300 ease-in-out">
+                    <div class="flex justify-center">
+                        <img class="w-[50%]" src="./assets/cabbage.png" alt="">
+                    </div> 
+                    <div class="flex justify-center pb-5">
+                        <h1>Cabbage</h1>
+                    </div>
+                </button>
+            </a>
+        </div>
+        <div class="flex justify-center mt-10 px-5">
+            <h2 class="text-white text-lg md:text-xl">
+                Providing organics and needs since 2004.
+            </h2>
+        </div>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="bg-white z-20 relative p-10 pt-20 flex flex-wrap justify-center items-center">
+        <div class="w-full md:w-1/2 flex justify-center mb-10 md:mb-0">
+            <img class="w-[80%] md:w-[65%]" src="./assets/map.png" alt="">
+        </div>
+        <div class="w-full md:w-1/2 text-center md:text-left">
+            <h2 class="text-lg md:text-xl">
+                <span class="font-bold text-xl md:text-2xl">Available in towns closer than you think.</span><br>
+                <li>Pulpenvania</li>
+                <li>Rasisilia</li>
+                <li>Tultington</li>
+            </h2>
+        </div>
+    </div>
+
+    <div class="bg-white grid grid-cols-1 md:grid-cols-3 shadow-xl p-7 z-20 relative pb-10 gap-5">
+        <div class="rounded-lg shadow-xl shadow-lime-700 p-5">
+            <p class="text-green-500 text-5xl flex justify-center">
+                <i class="fa-solid fa-apple-whole"></i>
+            </p>
+            <p class="flex justify-center text-lg">
+                100% Fresh
+            </p>
+        </div>
+        <div class="rounded-lg shadow-pink-700 shadow-lg p-5">
+            <p class="text-pink-500 text-5xl flex justify-center">
+                <i class="fa-solid fa-heart"></i>
+            </p>
+            <p class="flex justify-center text-lg">
+                Trusted by 100+ Customers
+            </p>
+        </div>
+        <div class="rounded-lg shadow-lg shadow-yellow-600 p-5">
+            <p class="text-orange-300 text-5xl flex justify-center">
+                <i class="fa-solid fa-dollar-sign"></i>
+            </p>
+            <p class="flex justify-center text-lg">
+                Best Prices in Town
+            </p>
+        </div>
+    </div>
+    
+    <footer class="bg-green-800 p-10 grid grid-cols-1 z-20 relative md:grid-cols-3 text-white gap-5">
+        <div>
+            <p>
+                Dasmart & co.
+            </p>
+            <p>
+                Committed to bringing you the best of goods.<br>&copy; 2020, dasmart&co. All Rights Reserved
+            </p>
+        </div>
+        <div class="flex justify-center">
+            <img class="w-[20%]" src="./assets/logo.png" alt="">
+        </div>
+        <div class="flex justify-end text-right">
+            <p class="ml-16">
+                (+62)824-2535-3252-6366<br>
+                dasmart@daskomlab.com<br>
+                Berharap Bersama St. Tultington
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

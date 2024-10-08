@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="font-[Poppins]">
+    <div class="min-h-screen bg-cover flex flex-col justify-between" style="background-image: url(./assets/bg_profile.png);">
+        <nav class="flex flex-wrap justify-between items-center p-5 bg-white shadow-md sticky top-0 z-10">
+            <div>
+                <a href="./index.html">
+                    <img class="w-16 h-16 md:w-20 md:h-20" src="./assets/logoijo.png" alt="">
+                </a>
+            </div>
+            <button id="burgerMenuButton" class="block md:hidden p-3">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+            <div id="navLinks" class="w-full md:w-auto hidden md:flex flex-col md:flex-row items-center pr-5">
+                <ul class="flex flex-col md:flex-row items-center">
+                    <li class="py-2 md:py-0">
+                        <a class="px-3 md:px-5 pb-2 text-black relative after:block after:bg-green-800 after:content-[''] after:h-[3px] after:w-0 after:transition-all after:duration-300 after:ease-in-out after:absolute after:left-0 after:bottom-0 hover:after:w-full" 
+                        href="./market.php">Marketplace</a>
+                    </li>
+                    <li class="py-2 md:py-0">
+                        <a class="px-3 md:px-5 pb-2 text-black relative after:block after:bg-green-800 after:content-[''] after:h-[3px] after:w-0 after:transition-all after:duration-300 after:ease-in-out after:absolute after:left-0 after:bottom-0 hover:after:w-full" 
+                        href="./aboutus.html">About Us</a>
+                    </li>
+                    <li class="py-2 md:py-0">
+                        <a id="profile" class="px-3 md:px-5 pb-2 text-black relative after:block after:bg-green-800 after:content-[''] after:h-[3px] after:w-0 after:transition-all after:duration-300 after:ease-in-out after:absolute after:left-0 after:bottom-0 hover:after:w-full" 
+                        href="./profilePage.html">Profile</a>
+                    </li>
+                    <li>
+                        <a id="basket" class="hidden p-3 px-4 text-white bg-green-800 rounded-3xl hover:bg-green-600" href="./basket.html">Basket</a>
+                    </li>    
+                    <li>
+                        <a id="signin" class="p-3 px-4 text-white bg-green-800 rounded-3xl hover:bg-green-600" href="./signInPage.php">Sign In</a>
+                    </li>   
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Profile Section -->
+        <section class="mt-14 mx-10 mb-10 flex-grow">
+            <h1 class="text-5xl mb-10">Your Profile</h1>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <div>
+                    <img src="./assets/profile.png" alt="Profile Picture" class="w-48 h-48">
+                    <div class="flex justify-center">
+                        <form method="POST" action="../constant/functions.php"> <!-- Assuming functions.php is the correct handler -->
+                            <button type="submit" name="logout" class="bg-red-600 text-white py-2 px-4 rounded">Logout</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="flex flex-col xl:w-8/12 md:w-full">
+                    <h2 id="username" class="text-xl font-bold text-gray-800 mb-2"></h2>
+                    <h3 id="email" class="text-lg font-semibold text-gray-700 mb-4"></h3>
+                    <p class="text-gray-600">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dictum magna ante, nec ornare odio condimentum eu. Aenean congue diam ante, sed commodo elit tincidunt sit amet. Nulla congue congue ipsum id venenatis. In ac mi dui. Fusce in mollis justo. Mauris eu diam rhoncus, ultricies est ut, mattis neque. Cras pretium neque id gravida convallis. Curabitur sollicitudin, nibh non condimentum sollicitudin, sem dolor semper ante, nec placerat sapien felis id sapien.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Footer -->
+        <footer class="bg-green-800 p-10 grid grid-cols-1 z-20 relative md:grid-cols-3 text-white gap-5">
+            <div>
+                <p>
+                    Dasmart & co.
+                </p>
+                <p>
+                    Committed to bringing you the best of goods.<br>&copy; 2020, dasmart&co. All Rights Reserved
+                </p>
+            </div>
+            <div class="flex justify-center">
+                <img class="w-[20%]" src="./assets/logo.png" alt="">
+            </div>
+            <div class="flex justify-end text-right">
+                <p class="ml-16">
+                    (+62)824-2535-3252-6366<br>
+                    dasmart@daskomlab.com<br>
+                    Berharap Bersama St. Tultington
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
